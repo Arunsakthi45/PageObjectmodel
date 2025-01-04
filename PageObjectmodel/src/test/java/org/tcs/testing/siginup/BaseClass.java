@@ -68,7 +68,10 @@ public class BaseClass {
 
 	}
 	
-	
+	public void ClearTex(WebElement element) {
+		element.clear();
+
+	}
 	
 	
 	
