@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tcs.testing.siginup.MainClass">
+      <class name="org.tce.login.test.TestLogin">
         <methods>
-          <include name="qiut"/>
-          <include name="Tc2"/>
           <include name="Launch"/>
+          <include name="Tc2" invocation-numbers="0"/>
+          <include name="qiut"/>
         </methods>
-      </class> <!-- org.tcs.testing.siginup.MainClass -->
+      </class> <!-- org.tce.login.test.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
