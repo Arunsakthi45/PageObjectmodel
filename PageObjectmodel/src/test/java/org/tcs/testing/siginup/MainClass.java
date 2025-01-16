@@ -20,7 +20,7 @@ public class MainClass {
 		
 	@Parameters({"name1","pass"})
 		@Test
-		private void Tc1(@Optional("Arunkumar45")String names,String pass) {
+		private void Tc1(@Optional("Arunkumar45")String names,@Optional("FI178Q")String pass) {
 			LoginPage l = new LoginPage();
 			l.LoginpageElements(names,pass );
 		}

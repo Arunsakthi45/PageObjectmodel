@@ -5,7 +5,7 @@
     <classes>
       <class name="org.tcs.testing.siginup.MainClass"/>
       <parameter name="name" value="Arunkumar45"/>
-      <parameter name="pass" value="J5013D"/>
+      <parameter name="pass" value="FI178Q"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
