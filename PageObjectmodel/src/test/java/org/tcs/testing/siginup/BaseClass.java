@@ -72,6 +72,11 @@ public class BaseClass {
 
 	}
 	
+	public void GetText(WebElement element) {
+		element.getText();
+
+	}
+	
 	
 	
 	

@@ -8,10 +8,10 @@ public class SearchHotelPage extends BaseClass {
 	public SearchHotelPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(name="location")
 	private WebElement location;
-	
+
 	public WebElement getLocation() {
 		return location;
 	}
@@ -50,28 +50,28 @@ public class SearchHotelPage extends BaseClass {
 
 	@FindBy(name="hotels")
 	private WebElement hotels;
-	
+
 	@FindBy(name="room_type")
 	private WebElement room;
-	
+
 	@FindBy(name="room_nos")
 	private WebElement roomnumber;
-	
+
 	@FindBy(name="datepick_in")
 	private WebElement datein;
-	
+
 	@FindBy(name="datepick_out")
 	private WebElement dateout;
-	
+
 	@FindBy(name="adult_room")
 	private WebElement adults;
-	
+
 	@FindBy(name="child_room")
 	private WebElement childrens;
-	
+
 	@FindBy(name="Submit")
 	private WebElement Submitbtn;
-	
+
 	public void Searchhotel(String loc,String hotel,String rom,String number,String date,String dateot,String adult,String child) {
 		SelectByVisibleText(getLocation(),loc);
 		SelectByVisibleText(getHotels(), hotel);
@@ -86,8 +86,8 @@ public class SearchHotelPage extends BaseClass {
 		BtnClick(getSubmitbtn());
 
 	}
-	
-	
-	
+
+
+
 
 }

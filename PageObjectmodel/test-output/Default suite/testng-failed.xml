@@ -5,8 +5,8 @@
     <classes>
       <class name="org.tce.login.test.TestLogin">
         <methods>
+          <include name="Tc1"/>
           <include name="Launch"/>
-          <include name="Tc2" invocation-numbers="0"/>
           <include name="qiut"/>
         </methods>
       </class> <!-- org.tce.login.test.TestLogin -->
