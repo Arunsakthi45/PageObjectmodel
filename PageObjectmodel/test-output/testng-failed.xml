@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
-    <parameter name="pass" value="J5013D"/>
-    <parameter name="name" value="Arunkumar45"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tcs.testing.siginup.MainClass">
+      <class name="org.tce.login.test.TestLogin">
         <methods>
           <include name="Tc1"/>
-          <include name="Tc3"/>
-          <include name="Tc2"/>
-          <include name="Tc4"/>
           <include name="Launch"/>
           <include name="qiut"/>
         </methods>
-      </class> <!-- org.tcs.testing.siginup.MainClass -->
+      </class> <!-- org.tce.login.test.TestLogin -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

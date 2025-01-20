@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AdactinHotels">
+  <test thread-count="5" name="Test">
+  <parameter name="url" value="https://adactinhotelapp.com/"></parameter>
     <classes>
       <class name="org.tcs.testing.siginup.MainClass"/>
-      <parameter name="name" value="Arunkumar45"/>
-      <parameter name="pass" value="J5013D"/>
+      <class name="org.tce.login.test.TestLogin"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

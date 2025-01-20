@@ -1,5 +1,7 @@
 package org.tcs.testing.siginup;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +18,9 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 		return driver;
+		 
 	    
 	}
 	
@@ -65,6 +69,11 @@ public class BaseClass {
 	}
 	public void ClearTex(WebElement element) {
 		element.clear();
+
+	}
+	
+	public void GetText(WebElement element) {
+		element.getText();
 
 	}
 	
